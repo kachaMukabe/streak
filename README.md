@@ -13,7 +13,7 @@ pip install streak-cal
 ## Usage
 
 ```bash
-streak-cal
+streak-cal --help
 ```
 ![streak-cal](https://github.com/kachaMukabe/streak/blob/main/assets/2020-11-16%2012-43-49.2020-11-16%2012_44_58.gif)
 

@@ -1,10 +1,15 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
     name='streak_cal',
-    version='0.2',
+    version='0.3',
     author="Kacha Mukabe",
     description="A cli calendar for keeping track of streaks",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     url="https://github.com/kachaMukabe/streak",
     packages=find_packages(),
     include_package_data=True,
