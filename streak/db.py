@@ -1,9 +1,13 @@
 from tinydb import TinyDB, Query
 from tinydb.operations import set
 import datetime
+import os
 
-
-db = TinyDB('db.json')
+path = os.path.expanduser('~/streak')
+if not os.path.exists(path):
+    os.mkdir(path)
+    
+db = TinyDB(f'{path}/db.json')
 
 Entry = Query()
 
